@@ -25,16 +25,22 @@ export default {
     return {
       items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          src: require("../assets/photos/DSCF6029.jpg"),
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          src: require("../assets/photos/DSCF6031.jpg"),
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          src: require("../assets/photos/DSCF6043.jpg"),
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          src: require("../assets/photos/DSCF6072.jpg"),
+        },
+        {
+          src: require("../assets/photos/DSCF6073.jpg"),
+        },
+        {
+          src: require("../assets/photos/DSCF6113.jpg"),
         },
       ],
     };

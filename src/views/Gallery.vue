@@ -42,7 +42,7 @@
                     <v-card
                       height="154px"
                       width="154px"
-                      class="brown lighten-5 pa-1 album-photo"
+                      class="brown lighten-5 pa-1 mx-auto album-photo"
                       @click="onPhotoCardClick(index)"
                     >
                       <v-img

@@ -2,20 +2,18 @@
   <v-container class="brown lighten-4 my-4 rounded-lg elevation-12">
     <v-row class="text-center">
       <v-col cols="12">
-          <v-img
-            :src="require('../assets/images/logo.png')"
-            class="my-3"
-            contain
-            height="200"
-          />
+        <v-img
+          :src="require('../assets/images/logo.png')"
+          class="my-3"
+          contain
+          height="200"
+        />
       </v-col>
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">Welcome to Space Orion</h1>
-        <v-img
-          :src="require('../assets/photos/IMG_20190804_081121.jpg')"
-        />
-<!-- 
+        <v-img :src="'./photos/IMG_20190804_081121.jpg'" />
+        <!-- 
         <p class="subheading font-weight-regular">
           For help and collaboration with other Vuetify developers,
           <br />please join our online

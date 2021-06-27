@@ -2,7 +2,11 @@
   <v-app>
     <!-- Title bar -->
     <v-app-bar app color="brown" dark>
-      <div class="d-flex align-center" @click="takeMeHome" style="cursor: pointer">
+      <div
+        class="d-flex align-center"
+        @click="takeMeHome"
+        style="cursor: pointer"
+      >
         <v-img
           alt="Space Orion Society Logo"
           class="shrink mr-2 grey lighten-5 rounded-circle"
@@ -11,13 +15,12 @@
           transition="scale-transition"
           width="40"
         />
-        <v-toolbar-title
-          class="shrink mt-1 hidden-xs-only">
+        <v-toolbar-title class="shrink mt-1 hidden-xs-only">
           Space Orion, Nashik
         </v-toolbar-title>
       </div>
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon @click="showDrawer=true"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="showDrawer = true"></v-app-bar-nav-icon>
     </v-app-bar>
     <!-- Navigation drawer -->
     <v-navigation-drawer v-model="showDrawer" app bottom temporary right>
@@ -42,7 +45,9 @@
     </v-navigation-drawer>
     <!-- Main page content -->
     <v-main class="main-content">
-      <router-view />
+      <keep-alive>
+        <router-view />
+      </keep-alive>
     </v-main>
     <!-- Footer -->
     <v-footer app padless color="brown" dark>
@@ -90,7 +95,7 @@ export default {
   }),
   methods: {
     takeMeHome() {
-      const wayToHome = '/';
+      const wayToHome = "/";
       if (this.$route.path !== wayToHome) {
         this.$router.push(wayToHome);
       }
@@ -100,6 +105,6 @@ export default {
 </script>
 <style lang="scss">
 .main-content {
-  background: white url('~@/assets/images/cloth.jpg') repeat scroll top left;
+  background: white url("~@/assets/images/cloth.jpg") repeat scroll top left;
 }
 </style>

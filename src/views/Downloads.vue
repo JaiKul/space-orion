@@ -51,36 +51,36 @@ export default {
           link: "./files/Model Bye Laws of Coop Housing Society New Flatowner Type 2-9-14.pdf",
         },
         {
-          icon: "mdi-file-word",
+          icon: "mdi-file-pdf",
           text: "Working Manual Bye Laws",
-          link: "./files/Working_Manual_BYE LAWS -SPACE ORION SOCIETY-V(2).docx",
+          link: "./files/Working_Manual_BYE LAWS -SPACE ORION SOCIETY-V(2).pdf",
         },
         {
-          icon: "mdi-file-word",
+          icon: "mdi-file-pdf",
           text: "Intimation to members",
-          link: "./files/INTIMATION TO SPACE ORION MEMBERS.docx",
+          link: "./files/INTIMATION TO SPACE ORION MEMBERS.pdf",
         },
         {
-          icon: "mdi-file-word",
+          icon: "mdi-file-pdf",
           text: "Sticker Distribution",
-          link: "./files/Sticket Distribution.docx",
+          link: "./files/Sticket Distribution.pdf",
         },
       ],
       notices: [
         {
-          icon: "mdi-file-word",
+          icon: "mdi-file-pdf",
           text: "November 2020",
-          link: "./files/Notice Nov 2020 -Whatsapp.docx",
+          link: "./files/Notice Nov 2020 -Whatsapp.pdf",
         },
+        // {
+        //   icon: "mdi-file-word",
+        //   text: "July - August 2020",
+        //   link: "./files/Notice July - Aug 2020.docx",
+        // },
         {
-          icon: "mdi-file-word",
-          text: "July - August 2020",
-          link: "./files/Notice July - Aug 2020.docx",
-        },
-        {
-          icon: "mdi-file-word",
+          icon: "mdi-file-pdf",
           text: "June 2020",
-          link: "./files/Notice 27 June 2020.docx",
+          link: "./files/Notice 27 June 2020.pdf",
         },
       ],
     };

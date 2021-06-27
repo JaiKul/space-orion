@@ -33,7 +33,7 @@ const routes = [
     name: "ContactUs",
     component: () =>
       import(/* webpackChunkName: "contact-us" */ "../views/ContactUs.vue"),
-  }
+  },
 ];
 
 const router = new VueRouter({

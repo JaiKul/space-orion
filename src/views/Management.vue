@@ -5,7 +5,9 @@
         <v-card>
           <v-card-title>Society Management</v-card-title>
           <v-card-text>
-            <p v-for="(paragraphText, index) in paragraphs" :key="index">{{ paragraphText }}</p>
+            <p v-for="(paragraphText, index) in paragraphs" :key="index">
+              {{ paragraphText }}
+            </p>
           </v-card-text>
         </v-card>
       </v-col>
@@ -14,16 +16,35 @@
           <v-card-title>
             <span>Important phone numbers</span>
             <v-spacer></v-spacer>
-            <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" single-line hide-details>
-            </v-text-field>
+            <v-text-field
+              v-model="search"
+              append-icon="mdi-magnify"
+              label="Search"
+              single-line
+              hide-details
+            ></v-text-field>
           </v-card-title>
-          <v-data-table :headers="tableHeaders" :items="phoneNumbers" :search="search">
+          <v-data-table
+            :headers="tableHeaders"
+            :items="phoneNumbers"
+            :search="search"
+          >
             <template v-slot:item.number="{ item }">
-              <a :href="`tel:${item.number}`" class="v-list-item v-list-item--link theme--light pa-0">
+              <a
+                :href="`tel:${item.number}`"
+                class="v-list-item v-list-item--link theme--light pa-0"
+              >
                 {{ item.formattedNumber }}
               </a>
             </template>
           </v-data-table>
+          <v-card-text v-if="tableFootnotes.length">
+            <ul>
+              <li v-for="(footnote, index) in tableFootnotes" :key="index">
+                {{ footnote }}
+              </li>
+            </ul>
+          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -35,15 +56,22 @@ export default {
   data() {
     return {
       paragraphs: [
-        "The society is managed by a \"management committee\" constituted under the laws governing Cooperative Housing Socities under Maharashtra Cooperative Societies Act and Model Bylaws of Cooperative Housing Societies in state of Maharashtra. The society has been registered in year 2016 with the Department of Cooperation, Maharashtra under Registration Number.",
+        'The society is managed by a "management committee" constituted under the laws governing Cooperative Housing Socities under Maharashtra Cooperative Societies Act and Model Bylaws of Cooperative Housing Societies in state of Maharashtra. The society has been registered in year 2016 with the Department of Cooperation, Maharashtra under Registration Number.',
         "The present management committee took charge in June 2016 and its five year term would end in June 2021.",
         "Society work is managed by a Manager, Accounts Manager, Maintenance Supervisors and Security Supervisors. Security and Housekeeping resources are outsourced from outside contractors.",
       ],
-      phoneNumbers: [{
+      phoneNumbers: [
+        {
           name: "Sunil R. Warungase",
           number: "+918888435820",
           formattedNumber: "(+91) 888 843 5820",
           particulars: "Accounts & Administration",
+        },
+        {
+          name: "Rahul Bhor",
+          number: "+919371555167",
+          formattedNumber: "(+91) 937 155 5167",
+          particulars: "Owner-Security & Housekeeping",
         },
         {
           name: "Mahesh Ashok Jadhav",
@@ -81,9 +109,20 @@ export default {
           formattedNumber: "(+91) 738 738 8063",
           particulars: "Security - Night - 8 p.m. to 8 a.m",
         },
+        {
+          name: "Saroj Ahire - Aamdar",
+          number: "+918408899113",
+          formattedNumber: "(+91) 840 889 9113",
+        },
+        {
+          number: "+919637928289",
+          formattedNumber: "(+91) 963 792 8289",
+          particulars: "Security Cabin",
+        },
       ],
       search: "",
-      tableHeaders: [{
+      tableHeaders: [
+        {
           text: "Name",
           value: "name",
           align: "start",
@@ -99,6 +138,10 @@ export default {
           value: "particulars",
           sortable: false,
         },
+      ],
+      tableFootnotes: [
+        "In case of any water related problem, please contact Security person.",
+        "In case of any housekeeping related problem, please contact Supervisor.",
       ],
     };
   },

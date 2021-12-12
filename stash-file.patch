@@ -1,0 +1,390 @@
+diff --git a/package-lock.json b/package-lock.json
+index d412604..5ae98c7 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1752,6 +1752,63 @@
+           "integrity": "sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==",
+           "dev": true
+         },
++        "ansi-styles": {
++          "version": "4.3.0",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/ansi-styles/-/ansi-styles-4.3.0.tgz",
++          "integrity": "sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==",
++          "dev": true,
++          "optional": true,
++          "requires": {
++            "color-convert": "^2.0.1"
++          }
++        },
++        "chalk": {
++          "version": "4.1.2",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/chalk/-/chalk-4.1.2.tgz",
++          "integrity": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==",
++          "dev": true,
++          "optional": true,
++          "requires": {
++            "ansi-styles": "^4.1.0",
++            "supports-color": "^7.1.0"
++          }
++        },
++        "color-convert": {
++          "version": "2.0.1",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/color-convert/-/color-convert-2.0.1.tgz",
++          "integrity": "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==",
++          "dev": true,
++          "optional": true,
++          "requires": {
++            "color-name": "~1.1.4"
++          }
++        },
++        "color-name": {
++          "version": "1.1.4",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/color-name/-/color-name-1.1.4.tgz",
++          "integrity": "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==",
++          "dev": true,
++          "optional": true
++        },
++        "has-flag": {
++          "version": "4.0.0",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/has-flag/-/has-flag-4.0.0.tgz",
++          "integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==",
++          "dev": true,
++          "optional": true
++        },
++        "loader-utils": {
++          "version": "2.0.2",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/loader-utils/-/loader-utils-2.0.2.tgz",
++          "integrity": "sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==",
++          "dev": true,
++          "optional": true,
++          "requires": {
++            "big.js": "^5.2.2",
++            "emojis-list": "^3.0.0",
++            "json5": "^2.1.2"
++          }
++        },
+         "ssri": {
+           "version": "8.0.1",
+           "resolved": "https://registry.npmjs.org/ssri/-/ssri-8.0.1.tgz",
+@@ -1760,6 +1817,28 @@
+           "requires": {
+             "minipass": "^3.1.1"
+           }
++        },
++        "supports-color": {
++          "version": "7.2.0",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/supports-color/-/supports-color-7.2.0.tgz",
++          "integrity": "sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==",
++          "dev": true,
++          "optional": true,
++          "requires": {
++            "has-flag": "^4.0.0"
++          }
++        },
++        "vue-loader-v16": {
++          "version": "npm:vue-loader@16.8.3",
++          "resolved": "https://msnexus.morningstar.com/repository/npm-all/vue-loader/-/vue-loader-16.8.3.tgz",
++          "integrity": "sha512-7vKN45IxsKxe5GcVCbc2qFU5aWzyiLrYJyUuMz4BQLKctCj/fmCa0w6fGiiQ2cLFetNcek1ppGJQDCup0c1hpA==",
++          "dev": true,
++          "optional": true,
++          "requires": {
++            "chalk": "^4.1.0",
++            "hash-sum": "^2.0.0",
++            "loader-utils": "^2.0.0"
++          }
+         }
+       }
+     },
+@@ -11968,87 +12047,6 @@
+         }
+       }
+     },
+-    "vue-loader-v16": {
+-      "version": "npm:vue-loader@16.2.0",
+-      "resolved": "https://registry.npmjs.org/vue-loader/-/vue-loader-16.2.0.tgz",
+-      "integrity": "sha512-TitGhqSQ61RJljMmhIGvfWzJ2zk9m1Qug049Ugml6QP3t0e95o0XJjk29roNEiPKJQBEi8Ord5hFuSuELzSp8Q==",
+-      "dev": true,
+-      "optional": true,
+-      "requires": {
+-        "chalk": "^4.1.0",
+-        "hash-sum": "^2.0.0",
+-        "loader-utils": "^2.0.0"
+-      },
+-      "dependencies": {
+-        "ansi-styles": {
+-          "version": "4.3.0",
+-          "resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
+-          "integrity": "sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==",
+-          "dev": true,
+-          "optional": true,
+-          "requires": {
+-            "color-convert": "^2.0.1"
+-          }
+-        },
+-        "chalk": {
+-          "version": "4.1.1",
+-          "resolved": "https://registry.npmjs.org/chalk/-/chalk-4.1.1.tgz",
+-          "integrity": "sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==",
+-          "dev": true,
+-          "optional": true,
+-          "requires": {
+-            "ansi-styles": "^4.1.0",
+-            "supports-color": "^7.1.0"
+-          }
+-        },
+-        "color-convert": {
+-          "version": "2.0.1",
+-          "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz",
+-          "integrity": "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==",
+-          "dev": true,
+-          "optional": true,
+-          "requires": {
+-            "color-name": "~1.1.4"
+-          }
+-        },
+-        "color-name": {
+-          "version": "1.1.4",
+-          "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
+-          "integrity": "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==",
+-          "dev": true,
+-          "optional": true
+-        },
+-        "has-flag": {
+-          "version": "4.0.0",
+-          "resolved": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+-          "integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==",
+-          "dev": true,
+-          "optional": true
+-        },
+-        "loader-utils": {
+-          "version": "2.0.0",
+-          "resolved": "https://registry.npmjs.org/loader-utils/-/loader-utils-2.0.0.tgz",
+-          "integrity": "sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==",
+-          "dev": true,
+-          "optional": true,
+-          "requires": {
+-            "big.js": "^5.2.2",
+-            "emojis-list": "^3.0.0",
+-            "json5": "^2.1.2"
+-          }
+-        },
+-        "supports-color": {
+-          "version": "7.2.0",
+-          "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz",
+-          "integrity": "sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==",
+-          "dev": true,
+-          "optional": true,
+-          "requires": {
+-            "has-flag": "^4.0.0"
+-          }
+-        }
+-      }
+-    },
+     "vue-router": {
+       "version": "3.5.1",
+       "resolved": "https://registry.npmjs.org/vue-router/-/vue-router-3.5.1.tgz",
+diff --git a/src/views/ContactUs.vue b/src/views/ContactUs.vue
+index 121dfd5..4112f0c 100644
+--- a/src/views/ContactUs.vue
++++ b/src/views/ContactUs.vue
+@@ -80,11 +80,11 @@ export default {
+           text: "spaceorionresidents@gmail.com",
+           link: "mailto:spaceorionresidents@gmail.com",
+         },
+-        {
+-          icon: "mdi-phone-classic",
+-          text: "(+91) 253 1234 5678",
+-          link: "tel:+9125312345678",
+-        },
++        // {
++        //   icon: "mdi-phone-classic",
++        //   text: "(+91) 253 1234 5678",
++        //   link: "tel:+9125312345678",
++        // },
+       ],
+       googleMapIframeSrc:
+         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1875.12765889186!2d73.83594902612936!3d19.95576213013928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30bfde48b5169482!2sSpace%20Orion!5e0!3m2!1sen!2sin!4v1623484183056!5m2!1sen!2sin",
+diff --git a/src/views/Downloads.vue b/src/views/Downloads.vue
+index 054e207..0b5d054 100644
+--- a/src/views/Downloads.vue
++++ b/src/views/Downloads.vue
+@@ -8,7 +8,7 @@
+             <div v-for="(item, index) in list" :key="index">
+               <v-list-item :href="item.link" target="_blank">
+                 <v-list-item-icon>
+-                  <v-icon>{{ item.icon }}</v-icon>
++                  <v-icon v-text="item.icon"></v-icon>
+                 </v-list-item-icon>
+                 <v-list-item-content>
+                   <v-list-item-title>{{ item.text }}</v-list-item-title>
+@@ -25,7 +25,7 @@
+             <div v-for="(item, index) in notices" :key="index">
+               <v-list-item :href="item.link" target="_blank">
+                 <v-list-item-icon>
+-                  <v-icon>{{ item.icon }}</v-icon>
++                  <v-icon v-text="item.icon"></v-icon>
+                 </v-list-item-icon>
+                 <v-list-item-content>
+                   <v-list-item-title>{{ item.text }}</v-list-item-title>
+@@ -46,29 +46,34 @@ export default {
+       pageTitle: "Society rules, intimations, notices",
+       list: [
+         {
+-          icon: "mdi-file-pdf",
++          icon: "mdi-file-pdf-box",
+           text: "Model Bye Laws",
+           link: "./files/Model Bye Laws of Coop Housing Society New Flatowner Type 2-9-14.pdf",
+         },
+         {
+-          icon: "mdi-file-pdf",
++          icon: "mdi-file-pdf-box",
+           text: "Working Manual Bye Laws",
+           link: "./files/Working_Manual_BYE LAWS -SPACE ORION SOCIETY-V(2).pdf",
+         },
+         {
+-          icon: "mdi-file-pdf",
++          icon: "mdi-file-pdf-box",
+           text: "Intimation to members",
+           link: "./files/INTIMATION TO SPACE ORION MEMBERS.pdf",
+         },
+         {
+-          icon: "mdi-file-pdf",
++          icon: "mdi-file-pdf-box",
+           text: "Sticker Distribution",
+           link: "./files/Sticket Distribution.pdf",
+         },
++        {
++          icon: "mdi-file-pdf-box",
++          text: "AGM Minutes - 21 March, 2021",
++          link: "./files/AGM minutes.pdf",
++        },
+       ],
+       notices: [
+         {
+-          icon: "mdi-file-pdf",
++          icon: "mdi-file-pdf-box",
+           text: "November 2020",
+           link: "./files/Notice Nov 2020 -Whatsapp.pdf",
+         },
+@@ -78,7 +83,7 @@ export default {
+         //   link: "./files/Notice July - Aug 2020.docx",
+         // },
+         {
+-          icon: "mdi-file-pdf",
++          icon: "mdi-file-pdf-box",
+           text: "June 2020",
+           link: "./files/Notice 27 June 2020.pdf",
+         },
+diff --git a/src/views/Management.vue b/src/views/Management.vue
+index ccfee2d..086e6b1 100644
+--- a/src/views/Management.vue
++++ b/src/views/Management.vue
+@@ -11,10 +11,10 @@
+           </v-card-text>
+         </v-card>
+       </v-col>
+-      <v-col>
++      <!-- <v-col>
+         <v-card>
+           <v-card-title>
+-            <span>Important phone numbers</span>
++            <span>Committee Members</span>
+             <v-spacer></v-spacer>
+             <v-text-field
+               v-model="search"
+@@ -26,8 +26,7 @@
+           </v-card-title>
+           <v-data-table
+             :headers="tableHeaders"
+-            :items="phoneNumbers"
+-            :search="search"
++            :items="memberDetails"
+           >
+             <template v-slot:item.number="{ item }">
+               <a
+@@ -46,7 +45,7 @@
+             </ul>
+           </v-card-text>
+         </v-card>
+-      </v-col>
++      </v-col> -->
+     </v-row>
+   </v-container>
+ </template>
+@@ -60,63 +59,43 @@ export default {
+         "The present management committee took charge in June 2016 and its five year term would end in June 2021.",
+         "Society work is managed by a Manager, Accounts Manager, Maintenance Supervisors and Security Supervisors. Security and Housekeeping resources are outsourced from outside contractors.",
+       ],
+-      phoneNumbers: [
++      memberDetails: [
+         {
+           name: "Sunil R. Warungase",
+-          number: "+918888435820",
+-          formattedNumber: "(+91) 888 843 5820",
+           particulars: "Accounts & Administration",
+         },
+         {
+           name: "Rahul Bhor",
+-          number: "+919371555167",
+-          formattedNumber: "(+91) 937 155 5167",
+           particulars: "Owner-Security & Housekeeping",
+         },
+         {
+           name: "Mahesh Ashok Jadhav",
+-          number: "+918788332863",
+-          formattedNumber: "(+91) 878 833 2863",
+           particulars: "Supervisor",
+         },
+         {
+           name: "Ravi Jadhav",
+-          number: "+919689093384",
+-          formattedNumber: "(+91) 968 909 3384",
+           particulars: "Supervisor",
+         },
+         {
+           name: "Asif Khan",
+-          number: "+919011172317",
+-          formattedNumber: "(+91) 901 117 2317",
+           particulars: "Security - Day - 8 a.m. to 8 p.m.",
+         },
+         {
+           name: "Suresh Salve",
+-          number: "+917558620287",
+-          formattedNumber: "(+91) 755 862 0287",
+           particulars: "Security - Day - 8 a.m. to 8 p.m.",
+         },
+         {
+           name: "Holekar",
+-          number: "+919370376879",
+-          formattedNumber: "(+91) 937 037 6879",
+           particulars: "Security - Night - 8 p.m. to 8 a.m",
+         },
+         {
+           name: "Rajendra Nikale",
+-          number: "+917387388063",
+-          formattedNumber: "(+91) 738 738 8063",
+           particulars: "Security - Night - 8 p.m. to 8 a.m",
+         },
+         {
+           name: "Saroj Ahire - Aamdar",
+-          number: "+918408899113",
+-          formattedNumber: "(+91) 840 889 9113",
+         },
+         {
+-          number: "+919637928289",
+-          formattedNumber: "(+91) 963 792 8289",
+           particulars: "Security Cabin",
+         },
+       ],
+@@ -128,11 +107,6 @@ export default {
+           align: "start",
+           sortable: false,
+         },
+-        {
+-          text: "Phone number",
+-          value: "number",
+-          sortable: false,
+-        },
+         {
+           text: "Particulars",
+           value: "particulars",

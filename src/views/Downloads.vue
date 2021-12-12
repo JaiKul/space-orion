@@ -8,7 +8,7 @@
             <div v-for="(item, index) in list" :key="index">
               <v-list-item :href="item.link" target="_blank">
                 <v-list-item-icon>
-                  <v-icon>{{ item.icon }}</v-icon>
+                  <v-icon v-text="item.icon"></v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
                   <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -25,7 +25,7 @@
             <div v-for="(item, index) in notices" :key="index">
               <v-list-item :href="item.link" target="_blank">
                 <v-list-item-icon>
-                  <v-icon>{{ item.icon }}</v-icon>
+                  <v-icon v-text="item.icon"></v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
                   <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -46,29 +46,34 @@ export default {
       pageTitle: "Society rules, intimations, notices",
       list: [
         {
-          icon: "mdi-file-pdf",
+          icon: "mdi-file-pdf-box",
           text: "Model Bye Laws",
           link: "./files/Model Bye Laws of Coop Housing Society New Flatowner Type 2-9-14.pdf",
         },
         {
-          icon: "mdi-file-pdf",
+          icon: "mdi-file-pdf-box",
           text: "Working Manual Bye Laws",
           link: "./files/Working_Manual_BYE LAWS -SPACE ORION SOCIETY-V(2).pdf",
         },
         {
-          icon: "mdi-file-pdf",
+          icon: "mdi-file-pdf-box",
           text: "Intimation to members",
           link: "./files/INTIMATION TO SPACE ORION MEMBERS.pdf",
         },
         {
-          icon: "mdi-file-pdf",
+          icon: "mdi-file-pdf-box",
           text: "Sticker Distribution",
           link: "./files/Sticket Distribution.pdf",
+        },
+        {
+          icon: "mdi-file-pdf-box",
+          text: "AGM Minutes - 21 March, 2021",
+          link: "./files/AGM minutes.pdf",
         },
       ],
       notices: [
         {
-          icon: "mdi-file-pdf",
+          icon: "mdi-file-pdf-box",
           text: "November 2020",
           link: "./files/Notice Nov 2020 -Whatsapp.pdf",
         },
@@ -78,7 +83,7 @@ export default {
         //   link: "./files/Notice July - Aug 2020.docx",
         // },
         {
-          icon: "mdi-file-pdf",
+          icon: "mdi-file-pdf-box",
           text: "June 2020",
           link: "./files/Notice 27 June 2020.pdf",
         },

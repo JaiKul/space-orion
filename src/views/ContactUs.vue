@@ -80,11 +80,11 @@ export default {
           text: "spaceorionresidents@gmail.com",
           link: "mailto:spaceorionresidents@gmail.com",
         },
-        {
-          icon: "mdi-phone-classic",
-          text: "(+91) 253 1234 5678",
-          link: "tel:+9125312345678",
-        },
+        // {
+        //   icon: "mdi-phone-classic",
+        //   text: "(+91) 253 1234 5678",
+        //   link: "tel:+9125312345678",
+        // },
       ],
       googleMapIframeSrc:
         "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1875.12765889186!2d73.83594902612936!3d19.95576213013928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30bfde48b5169482!2sSpace%20Orion!5e0!3m2!1sen!2sin!4v1623484183056!5m2!1sen!2sin",

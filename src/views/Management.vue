@@ -14,20 +14,20 @@
       <v-col>
         <v-card>
           <v-card-title>
-            <span>Important phone numbers</span>
-            <v-spacer></v-spacer>
+            <span>Committee Members</span>
+            <!-- <v-spacer></v-spacer>
             <v-text-field
               v-model="search"
               append-icon="mdi-magnify"
               label="Search"
               single-line
               hide-details
-            ></v-text-field>
+            ></v-text-field> -->
           </v-card-title>
           <v-data-table
             :headers="tableHeaders"
-            :items="phoneNumbers"
-            :search="search"
+            :items="memberDetails"
+            :items-per-page="15"
           >
             <template v-slot:item.number="{ item }">
               <a
@@ -57,68 +57,66 @@ export default {
     return {
       paragraphs: [
         'The society is managed by a "management committee" constituted under the laws governing Cooperative Housing Socities under Maharashtra Cooperative Societies Act and Model Bylaws of Cooperative Housing Societies in state of Maharashtra. The society has been registered in year 2016 with the Department of Cooperation, Maharashtra under Registration Number.',
-        "The present management committee took charge in June 2016 and its five year term would end in June 2021.",
+        // "The present management committee took charge in June 2016 and its five year term would end in June 2021.",
         "Society work is managed by a Manager, Accounts Manager, Maintenance Supervisors and Security Supervisors. Security and Housekeeping resources are outsourced from outside contractors.",
       ],
-      phoneNumbers: [
+      memberDetails: [
         {
-          name: "Sunil R. Warungase",
-          number: "+918888435820",
-          formattedNumber: "(+91) 888 843 5820",
-          particulars: "Accounts & Administration",
+          name: "Govind Chimtaman Gore",
+          particulars: "Chairman",
         },
         {
-          name: "Rahul Bhor",
-          number: "+919371555167",
-          formattedNumber: "(+91) 937 155 5167",
-          particulars: "Owner-Security & Housekeeping",
+          name: "Suresh Nivrutti Shelke",
+          particulars: "Secretary",
         },
         {
-          name: "Mahesh Ashok Jadhav",
-          number: "+918788332863",
-          formattedNumber: "(+91) 878 833 2863",
-          particulars: "Supervisor",
+          name: "Sunil Ripudaman Kulshrestha",
+          particulars: "Joint Secretary",
         },
         {
-          name: "Ravi Jadhav",
-          number: "+919689093384",
-          formattedNumber: "(+91) 968 909 3384",
-          particulars: "Supervisor",
+          name: "Ramdas Kisan Adke",
+          particulars: "Treasurer",
         },
         {
-          name: "Asif Khan",
-          number: "+919011172317",
-          formattedNumber: "(+91) 901 117 2317",
-          particulars: "Security - Day - 8 a.m. to 8 p.m.",
+          name: "Shankar Siddeshwar Aglave",
+          particulars: "Joint Treasurer",
         },
         {
-          name: "Suresh Salve",
-          number: "+917558620287",
-          formattedNumber: "(+91) 755 862 0287",
-          particulars: "Security - Day - 8 a.m. to 8 p.m.",
+          name: "Ram Prakash Awasthi",
+          particulars: "MC Member",
         },
         {
-          name: "Holekar",
-          number: "+919370376879",
-          formattedNumber: "(+91) 937 037 6879",
-          particulars: "Security - Night - 8 p.m. to 8 a.m",
+          name: "Devendra Prabhu Mashalkar",
+          particulars: "MC Member",
         },
         {
-          name: "Rajendra Nikale",
-          number: "+917387388063",
-          formattedNumber: "(+91) 738 738 8063",
-          particulars: "Security - Night - 8 p.m. to 8 a.m",
+          name: "Tulashidas Sitaram Nagare",
+          particulars: "MC Member",
         },
         {
-          name: "Saroj Ahire - Aamdar",
-          number: "+918408899113",
-          formattedNumber: "(+91) 840 889 9113",
+          name: "Mrs. Mayura Sukrut Rahalkar",
+          particulars: "MC Member, women representative",
         },
         {
-          number: "+919637928289",
-          formattedNumber: "(+91) 963 792 8289",
-          particulars: "Security Cabin",
+          name: "Sanjay Prabhakar Dikshit",
+          particulars: "MC Member",
         },
+        {
+          name: "Mrs. Anjali Amit Khandekar",
+          particulars: "MC Member, women representative",
+        },
+        {
+          name: "Mandar Ashok Harshe",
+          particulars: "MC Member",
+        },
+        {
+          name: "Nitin Wasudeorao Chaudhary",
+          particulars: "MC Member",
+        },
+        {
+          name: "Avadh Sanjay Janardhan",
+          particulars: "MC Member",
+        }
       ],
       search: "",
       tableHeaders: [
@@ -129,19 +127,14 @@ export default {
           sortable: false,
         },
         {
-          text: "Phone number",
-          value: "number",
-          sortable: false,
-        },
-        {
           text: "Particulars",
           value: "particulars",
           sortable: false,
         },
       ],
       tableFootnotes: [
-        "In case of any water related problem, please contact Security person.",
-        "In case of any housekeeping related problem, please contact Supervisor.",
+        // "In case of any water related problem, please contact Security person.",
+        // "In case of any housekeeping related problem, please contact Supervisor.",
       ],
     };
   },

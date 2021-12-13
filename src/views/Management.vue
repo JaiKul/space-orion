@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       paragraphs: [
-        'The society is managed by a "management committee" constituted under the laws governing Cooperative Housing Socities under Maharashtra Cooperative Societies Act and Model Bylaws of Cooperative Housing Societies in state of Maharashtra. The society has been registered in year 2016 with the Department of Cooperation, Maharashtra under Registration Number.',
+        'The society is managed by a "management committee" constituted under the laws governing Cooperative Housing Societies under Maharashtra Cooperative Societies Act and Model Bylaws of Cooperative Housing Societies in state of Maharashtra. The society has been registered in year 2014 with the Department of Cooperation, Maharashtra under Registration Number NSK/(NSK)/HSG/(TC)/5587/2014.',
         // "The present management committee took charge in June 2016 and its five year term would end in June 2021.",
         "Society work is managed by a Manager, Accounts Manager, Maintenance Supervisors and Security Supervisors. Security and Housekeeping resources are outsourced from outside contractors.",
       ],
